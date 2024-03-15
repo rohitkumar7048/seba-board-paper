@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta data-name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="load.css">
+        <Link Rel="Stylesheet" Href="Style.Css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="header.css">
+        
+        
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+
+    <title>Document</title>
+
+    <style>
+   #contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    color: white;
+} 
+
+#contact-box form{
+    width: 85%;
+    
+}
+
+textarea[name="message"]::placeholder{
+    text-align: center;
+}
+contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+   
+
+}
+
+
+
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+
+
+.btn3{
+    float: left;
+    padding: 0px 18px;
+    border: 2px solid white;
+    background-color:green;
+    color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.btn4{
+    float: right;
+    padding: 0px 18px;
+    border: 2px solid white;
+    background-color:green;
+    color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+<br>
+      <div class="container">
+<marquee f style=" font-size:40px;
+    color:rgba(255, 0, 0, 0.769)
+    
+    ">Stay tuned! Our full collection of subject papers will be available soon.</marquee>
+<br>
+<br>
+        <div class="search-box">
+            <i class="bx bx-search"></i> 
+            <input type="text" placeholder="Search the subject">
+        </div>
+
+        <div class="images">
+            <div class="image-box" data-name="math">
+                <img src="images/math1.jpg"  onclick="window.open('paper/2019-22 Mathematics (SEBA Board) page.pdf','download');"
+                alt="" >
+                <h6 >math</h6>
+            </div>
+            <div class="image-box" data-name="english">
+                <img src="images/english1.jpg"     alt="">
+                <h6>english</h6>
+            </div>
+            <div class="image-box" data-name="hindi">
+                <img src="images/hindi1.jpg"  alt="">
+                <h6>hindi</h6></div>
+               
+            <!-- </div> -->
+           
+            <div class="image-box" data-name="science">
+                <img src="images/science1.jpg" onclick="window.open('paper/2019-22 Science (SEBA Board ) paper.pdf','download');" alt="">
+                <h6>science</h6>
+            </div>
+             <div class="image-box" data-name="social science">
+                <img src="images/social science1.jpg"  alt="">
+                <h6>social science</h6>
+            </div> 
+            <div class="image-box" data-name="assamese">
+                               <img src="images/assamese1.jpg" alt="">
+
+                <h6>assamese</h6>
+            </div>
+            <div class="image-box" data-name="geography">
+                <img src="images/geography1.jpg"  alt="">
+                <h6>geography</h6>
+            
+                    
+                
+            </div>
+           
+           
+        </div>
+
+        <footer id="contact">
+            <!-- <h1 class="h-primary center">Contact Us</h1> -->
+            <div id="contact-box">
+                <form action="" name="Feedback" id="Feedback" runat="server">
+                    <div class="form-group">
+                        <label for="name">Name: </label>
+                        <input type="text" name="Name" id="Name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email: </label>
+                        <input type="email" name="Email" id="Email" placeholder="Enter your email" required>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="message">Message: </label>
+                        <textarea name="Message" id="Message" cols="30" rows="10" placeholder="For any queries or messages,type the message here and send the button" required></textarea>
+                    </div>
+                    <div class="form-group"  style="height: 500px;">
+              <!-- <input type="submit"  value="submit" class="btn"  /> -->
+                       
+                       <button class="btn3" id="mybtn"  >submit</button> 
+                       <button class="btn4" onclick="homepage()" >👈🏻Home page</button> 
+                    </div>
+                </form>
+            </div>
+        </footer>
+        <script>
+            const scriptURL =
+         "https://script.google.com/macros/s/AKfycbyZK_SdnJG4OwHXk9RfRESyOzLPWfEPTrptov5oPcv16-bWwC6BqK8DU4Y1Lz2oNzJ6fg/exec";
+       const form = document.forms["Feedback"];
+ 
+       form.addEventListener("submit", (e) => {
+         e.preventDefault();
+         fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      
+                 .then(() => { 
+
+
+         window.location.href = 'thankyoupage.html';
+ 
+           
+           })
+                 .catch(error => console.error('Error!', error.message))
+             })
+ 
+ 
+        </script>
+            
+                  
+                  <script>
+                    function homepage(){
+         window.location.href = 'indeddddx.html';
+                      
+                    }
+                  </script>
+</body>
+</html>
